@@ -5,7 +5,7 @@ app.use(express.json())
 const mongoose = require('mongoose')
 require("./database/connection")
 const User = require("./models/userSchema")
-app.use(require("./router/user"))
+app.use("/api/",require("./router/user"))
 app.get("/", (req, res) => {
     res.send('Checking Get Method')
 
