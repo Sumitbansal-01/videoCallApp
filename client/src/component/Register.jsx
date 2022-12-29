@@ -1,7 +1,6 @@
-import React from "react"
 import { useState } from "react"
 import { Form, Button } from "react-bootstrap"
-// import {Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 export const Register = () => {
     const [name, setName]=useState('')
     const [email, setEmail]=useState('')
@@ -55,7 +54,7 @@ export const Register = () => {
                 Submit
             </Button></center>
             <br></br>
-            <center><span>If you already register <b>Click Here</b></span></center>
+            <center><span>If you already register <Link to='/login'><b>Click Here</b></Link></span></center>
             
         </Form>
     )
